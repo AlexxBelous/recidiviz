@@ -1,0 +1,109 @@
+.approach {
+  &__top {
+    padding: 80px 0;
+    background: #F7F8F8;
+  }
+
+  &__left {
+    grid-column: 5 span;
+    padding-top: 33px;
+  }
+
+  &__right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 8px;
+    grid-column: 7 / 6 span;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 13px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 22px;
+    color: #003331;
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: 37px;
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  &__btn {
+    color: #00413E;
+    font-size: 13px;
+    padding: 16px 34px;
+    border: 1px solid rgba(53, 83, 98, 0.20);
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.02px;
+  }
+
+  &__bottom {
+    background-color: var(--light-color);
+    padding: 24px 0;
+  }
+
+  &__item {
+    grid-column: 2 span;
+  }
+
+  &__link {
+    display: block;
+    border-top: 1px solid rgba(53, 83, 98, 0.30);
+    padding-top: 17px;
+    padding-left: 32px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--text-color);
+    background-position: left top 15px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    transition: color .3s ease-in-out, border-color .3s ease-in-out;
+
+
+    &:focus {
+      outline: none;
+    }
+
+    @include hover {
+      border-color: var(--accent-color);
+      color: var(--accent-color);
+    }
+
+    &:active {
+      border-color: var(--active-color);
+      color: var(--active-color);
+    }
+
+    &--ted {
+      background-image: url('../../img/svg/image-icon-1.png');
+    }
+    &--nyt {
+      background-image: url('../../img/svg/image-icon-2.png');
+    }
+    &--scoop {
+      background-image: url('../../img/svg/image-icon-3.png');
+    }
+    &--press {
+      background-image: url('../../img/svg/image-icon-4.png');
+    }
+    &--freethink {
+      background-image: url('../../img/svg/image-icon-5.png');
+    }
+    &--time {
+      background-image: url('../../img/svg/image-icon-6.png');
+    }
+  }
+}
+
+.approach__link.focus-visible {
+  border-color: var(--active-color);
+}
