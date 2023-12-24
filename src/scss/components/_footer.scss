@@ -3,6 +3,13 @@
     background: #001414;
     padding-top: 112px;
     padding-bottom: 137px;
+
+    .container {
+      @include small-tablet {
+        row-gap: var(--offset);
+        padding: 60px 0;
+      }
+    }
   }
 
   &__column {
@@ -10,6 +17,10 @@
 
     &:last-child {
       grid-column: 11 / 2 span;
+
+      @include small-tablet {
+        grid-column: 2 span;
+      }
     }
   }
 
@@ -18,6 +29,7 @@
     font-size: 15px;
     font-weight: 400;
     line-height: 30px;
+
   }
 
   &__title {
@@ -52,11 +64,20 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @include small-tablet {
+        flex-direction: column;
+      }
     }
     &-text {
       display: flex;
       align-items: center;
 
+    }
+  }
+
+  &__logo {
+    @include small-tablet {
+      margin-bottom: 20px;
     }
   }
 
@@ -70,9 +91,19 @@
       font-size: 10px;
       font-style: normal;
       font-weight: 400;
-      line-height: 10px; /* 100% */
+      line-height: 10px;
+
+      @include small-tablet {
+        font-size: 14px;
+      }
+    }
+    @include small-tablet {
+      margin-bottom: 20px;
+      flex-direction: column;
+
     }
   }
+
 
   &__copy {
     color: #E5ECEC;

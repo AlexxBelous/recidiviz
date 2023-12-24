@@ -3,12 +3,32 @@
   .container {
     align-items: center;
     gap: 6px;
+    @include big-desktop {
+      justify-content: space-around;
+    }
+    @include tablet {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+  }
+
+  &__logo {
+    @include big-desktop {
+      max-width: 130px;
+    }
   }
 
   &__list {
     display: flex;
     align-items: center;
     gap: 12px;
+    @include big-desktop {
+      justify-content: space-between;
+    }
+    @include tablet {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
   }
 
   &__title {
@@ -55,3 +75,5 @@
   outline: 1px solid var(--active-color);
   outline-offset: 3px;
 }
+
+//02:36:52

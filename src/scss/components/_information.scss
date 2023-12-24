@@ -3,8 +3,16 @@
   position: relative;
   padding-bottom: 140px;
 
+  @include small-tablet {
+    padding-bottom: 60px;
+  }
+
   &__text {
     grid-column: 6 span;
+
+    @include small-tablet {
+      grid-column: 4 span;
+    }
   }
 
   &__title {
@@ -17,6 +25,10 @@
     font-weight: 400;
     line-height: 38px;
     letter-spacing: 1.2px;
+
+    @include small-tablet {
+      margin-bottom: 20px;
+    }
   }
   &__subtitle {
     margin: 0;
@@ -40,9 +52,18 @@
     column-gap: var(--offset);
     grid-template-columns: repeat(6, 1fr);
     row-gap: 36px;
+
+    @include small-tablet {
+      grid-column: 4 span;
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 
   &__item {
     grid-column: 3 span;
+
+    @include small-tablet {
+      grid-column: 4 span;
+    }
   }
 }

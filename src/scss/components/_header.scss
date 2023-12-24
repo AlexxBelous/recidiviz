@@ -43,6 +43,10 @@
       }
     }
   }
+  @include small-tablet {
+    display: none;
+
+  }
 }
 
 .nav__link.focus-visible {

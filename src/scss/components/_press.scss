@@ -3,11 +3,20 @@
   padding-top: 88px;
   padding-bottom: 88px;
 
+  @include small-tablet {
+    padding: 60px 0;
+  }
+
   &__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 33px;
+
+    @include small-tablet {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
   }
 
   &__title {

@@ -6,10 +6,19 @@
 
   &__content {
     grid-column: 4 span;
+
+    @include small-tablet {
+      margin-bottom: 20px;
+      padding: 60px 0;
+    }
+
   }
 
   &__map {
     grid-column: 7 / 5 span;
+    @include small-tablet {
+      grid-column: 4 span;
+    }
   }
 
   &__title {
