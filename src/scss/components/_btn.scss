@@ -14,7 +14,7 @@
   border: 1px solid rgba(255, 255, 255, 0.30);
   padding: 17px 33px;
   transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
-
+  cursor: pointer;
   &:focus {
     outline: none;
   }
